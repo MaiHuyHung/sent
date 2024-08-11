@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Apology</title>
+    <style>
+        body {
+            background-color: #FFB6C1; /* Màu hồng nhạt */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .container img {
+            width: 500px; /* Thay đổi kích thước của hình ảnh */
+            height: 500px; /* Thay đổi kích thước của hình ảnh */
+            animation: bounce 2s infinite;
+        }
+        .container .apology-text {
+            font-size: 24px;
+            margin-top: 20px;
+            animation: fadeInOut 4s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="E:\Img_ConMeoBeo\icon\sorry.jpeg" alt="Sorry">
+        <div class="apology-text">I'm Sorry, Please Forgive Me!</div>
+    </div>
+</body>
+</html>
